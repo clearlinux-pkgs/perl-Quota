@@ -4,7 +4,7 @@
 #
 Name     : perl-Quota
 Version  : 1.7.2
-Release  : 11
+Release  : 12
 URL      : https://cpan.metacpan.org/authors/id/T/TO/TOMZO/Quota-1.7.2.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/T/TO/TOMZO/Quota-1.7.2.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libq/libquota-perl/libquota-perl_1.7.2+dfsg-1.debian.tar.xz
@@ -78,7 +78,7 @@ make TEST_VERBOSE=1 test
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-Quota
-cp %{_builddir}/Quota-1.7.2/deblicense/copyright %{buildroot}/usr/share/package-licenses/perl-Quota/d2d1cc40adf3aefa74839be703dd77c631f1f1fd
+cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-Quota/d2d1cc40adf3aefa74839be703dd77c631f1f1fd
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -102,6 +102,6 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Quota.pm
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/auto/Quota/Quota.so
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/auto/Quota/autosplit.ix
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Quota.pm
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/auto/Quota/Quota.so
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/auto/Quota/autosplit.ix
