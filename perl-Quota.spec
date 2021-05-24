@@ -4,7 +4,7 @@
 #
 Name     : perl-Quota
 Version  : 1.8.1
-Release  : 22
+Release  : 23
 URL      : https://cpan.metacpan.org/authors/id/T/TO/TOMZO/Quota-1.8.1.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/T/TO/TOMZO/Quota-1.8.1.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libq/libquota-perl/libquota-perl_1.7.2+dfsg-1.debian.tar.xz
@@ -14,6 +14,7 @@ License  : Artistic-1.0-Perl GPL-2.0
 Requires: perl-Quota-license = %{version}-%{release}
 Requires: perl-Quota-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
+BuildRequires : libtirpc-dev
 
 %description
 Quota extension module for Perl
