@@ -7,7 +7,7 @@
 #
 Name     : perl-Quota
 Version  : 1.8.2
-Release  : 33
+Release  : 34
 URL      : https://cpan.metacpan.org/authors/id/T/TO/TOMZO/Quota-1.8.2.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/T/TO/TOMZO/Quota-1.8.2.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libq/libquota-perl/libquota-perl_1.7.2+dfsg-1.debian.tar.xz
